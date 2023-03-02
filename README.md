@@ -2,7 +2,7 @@
 Project based python tutorial of development and QA of python based application. 
 
 ## Tree:
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/tree.png)
 
 ## The commit type can include the following:
 
