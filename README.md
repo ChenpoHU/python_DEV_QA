@@ -1,10 +1,10 @@
 # python_DEV_QA
 Project based python tutorial of development and QA of python based application. 
 
-## Tree:
+## Tree
 ![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/dirTree.png)
 
-## The commit type can include the following:
+## The commit type can include the following
 Type  | Explanation
 ------------- | -------------
 feat | a new feature is introduced with the changes
