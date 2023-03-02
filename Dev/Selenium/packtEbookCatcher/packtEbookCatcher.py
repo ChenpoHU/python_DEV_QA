@@ -10,10 +10,10 @@ login = 'https://www.packtpub.com/login'
 driver = webdriver.Safari()
 driver.get(login)
 
-driver.find_element_by_id('edit-name').send_keys(user)
-driver.find_element_by_id('edit-pass').send_keys(pw + Keys.RETURN)
+driver.find_element_by_id('login-input-email').send_keys(user)
+driver.find_element_by_id('login-input-password').send_keys(pw + Keys.RETURN)
 
-driver.find_element_by_link_text('My eBooks').click()
+driver.find_element_by_link_text('Sign In').click()
 
 elements = driver.find_elements_by_class_name("product-line")
 books = {e.get_attribute('nid'): e.get_attribute('title') for e in elements}

@@ -1,7 +1,7 @@
 from selenium import webdriver
 
-# create a new Chrome browser instance
-browser = webdriver.Chrome()
+# create a new Safari browser instance
+driver = webdriver.Safari()
 
 # navigate to the web application URL
 browser.get("https://dummyDashboard.com")
