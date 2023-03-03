@@ -70,7 +70,6 @@ Selenium is preferred over Cypress when one need:
 - Selenium supports NUnit and JUnit that are not supported by [3]
 
 Sources: 
-
-[1]https://martinfowler.com/bliki/TestPyramid.html
-[2]https://www.browserstack.com/guide/cypress-vs-selenium, last accessed on 03.03.2023
-[3]https://www.lambdatest.com/blog/cypress-vs-selenium-comparison/, last accessed on 03.03.2023
+- [1]https://martinfowler.com/bliki/TestPyramid.html, last accessed on 03.03.2023
+- [2]https://www.browserstack.com/guide/cypress-vs-selenium, last accessed on 03.03.2023
+- [3]https://www.lambdatest.com/blog/cypress-vs-selenium-comparison/, last accessed on 03.03.2023
