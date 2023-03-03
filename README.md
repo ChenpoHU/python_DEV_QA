@@ -21,10 +21,9 @@ ci | continuous integration related
 build | changes that affect the build system or external dependencies
 revert | reverts a previous commit
 
-
 ## 2. QA
-### 2.1 Testing Pyramid
-![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/testPyramid_Martin_Fowler.png)
+### 2.1 Testing Pyramid [1]
+![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/testPyramid.png)
 
 ### 2.2 Selenium vs. Cypress
 
@@ -52,7 +51,7 @@ Integrations| 	Wide range of integration options – CI/CD tools, reporting tool
 Driver Dependencies	| Appropriate browser driver has to be installed so that the test script can talk to the corresponding web browser.	| No driver dependency.
 Parallel testing| 	Supported	| Supported
 Multi Tabs| 	Supported	| Not supported
-Multiple browser instances| 	Supported| 	Not supported [1]
+Multiple browser instances| 	Supported| 	Not supported [2]
 
 Cypress is preferred over Selenium when one need:
 - Single Framework for Component, API, End to End, Visual, Accessibility, Performance testing
@@ -68,8 +67,10 @@ Selenium is preferred over Cypress when one need:
 - When one need flexibility in terms of choosing test script language. Cypress supports on JavaScripts, while Selenium supports several languages like Java, Python, JavaScript, C#, etc.
 - When you need to run a test case on different browsers simultaneously then Selenium Grid works the best, since Cypress cannot be used to drive two browsers at the same time.
 - Cross browser testing at scale becomes easy with Selenium. Cypress does not support browsers like Safari, which restricts the cross browser testing support, when compared to Selenium.
-- Selenium supports NUnit and JUnit that are not supported by [2]
+- Selenium supports NUnit and JUnit that are not supported by [3]
 
 Sources: 
-[1]https://www.browserstack.com/guide/cypress-vs-selenium, last accessed on 03.03.2023
-[2]https://www.lambdatest.com/blog/cypress-vs-selenium-comparison/, last accessed on 03.03.2023
+
+[1]https://martinfowler.com/bliki/TestPyramid.html
+[2]https://www.browserstack.com/guide/cypress-vs-selenium, last accessed on 03.03.2023
+[3]https://www.lambdatest.com/blog/cypress-vs-selenium-comparison/, last accessed on 03.03.2023
