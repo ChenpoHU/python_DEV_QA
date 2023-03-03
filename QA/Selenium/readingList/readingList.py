@@ -1,3 +1,12 @@
+"""
+Pytest-Dash provides a set of test fixtures and assertions that enable developers to test the behavior of their Plotly Dash apps. These include:
+
+A Dash test client fixture for making HTTP requests to the Dash app
+A Selenium WebDriver fixture for browser-based testing
+Custom test assertions for verifying the behavior of the Dash app, such as checking the contents of HTML elements or verifying the values of Dash components
+While Pytest-Dash is specifically designed for testing Plotly Dash apps, it may be possible to adapt it to work with other types of dashboards as well. However, it may not provide the same level of convenience and ease-of-use as it does with Plotly Dash.
+"""
+
 import os
 import re
 from time import sleep
