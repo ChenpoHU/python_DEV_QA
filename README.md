@@ -1,12 +1,12 @@
 # python_DEV_QA
 Project based python tutorial of development and QA of python based application. 
 
-##
+## 1. General
 
-### Tree
+### 1.1 Tree
 ![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/DirTree.png)
 
-### The commit type can include the following
+### 1.2 The commit type can include the following
 Type  | Explanation
 ------------- | -------------
 feat | a new feature is introduced with the changes
@@ -22,11 +22,11 @@ build | changes that affect the build system or external dependencies
 revert | reverts a previous commit
 
 
-## QA
-### Testing Pyramid
+## 2. QA
+### 2.1 Testing Pyramid
 ![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/testPyramid_Martin_Fowler.png)
 
-### Selenium vs. Cypress
+### 2.2 Selenium vs. Cypress
 
 FEATURE | SELENIUM | CYPRESS
 ------------- | ------------- | -------------
@@ -52,7 +52,7 @@ Integrations| 	Wide range of integration options – CI/CD tools, reporting tool
 Driver Dependencies	| Appropriate browser driver has to be installed so that the test script can talk to the corresponding web browser.	| No driver dependency.
 Parallel testing| 	Supported	| Supported
 Multi Tabs| 	Supported	| Not supported
-Multiple browser instances| 	Supported| 	Not supported
+Multiple browser instances| 	Supported| 	Not supported [1]
 
 Cypress is preferred over Selenium when one need:
 - Single Framework for Component, API, End to End, Visual, Accessibility, Performance testing
@@ -68,4 +68,8 @@ Selenium is preferred over Cypress when one need:
 - When one need flexibility in terms of choosing test script language. Cypress supports on JavaScripts, while Selenium supports several languages like Java, Python, JavaScript, C#, etc.
 - When you need to run a test case on different browsers simultaneously then Selenium Grid works the best, since Cypress cannot be used to drive two browsers at the same time.
 - Cross browser testing at scale becomes easy with Selenium. Cypress does not support browsers like Safari, which restricts the cross browser testing support, when compared to Selenium.
-- Selenium supports NUnit and JUnit that are not supported by
+- Selenium supports NUnit and JUnit that are not supported by [2]
+
+Sources: 
+[1]https://www.browserstack.com/guide/cypress-vs-selenium, last accessed on 03.03.2023
+[2]https://www.lambdatest.com/blog/cypress-vs-selenium-comparison/, last accessed on 03.03.2023
