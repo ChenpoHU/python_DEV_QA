@@ -44,8 +44,7 @@ Test Flakiness| 	Tests can be flaky	| With Cypress, tests are expected to be non
 Programming Languages| Python, C#, Java, Python, Ruby, JavaScript | JavaScript
 Browser Support	| Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari | Brave, Chrome, Edge, Firefox, Electron
 Test Frameworks	| PyUnit, JUnit, TestNG, JBehave, Behave, Gauge, Specflow, NUnit, Robot, and more. | Mocha JS
-Test Setup | Selenium Grid Server and browser drivers have to be installed in the test machine.
-Setup is different for a cloud-based Selenium Grid where only browser drivers have to be installed on the test machine. | Node JS, Mocha JS, and Cypress have to be installed on the test machine.
+Test Setup | Selenium Grid Server and browser drivers have to be installed in the test machine. Setup is different for a cloud-based Selenium Grid where only browser drivers have to be installed on the test machine. | Node JS, Mocha JS, and Cypress have to be installed on the test machine.
 Arena of testing| 	Unit testing, security testing, and integration testing	| Unit testing, security testing, and integration testing
 Integrations| 	Wide range of integration options – CI/CD tools, reporting tools, and more.	| Limited integration support with CI/CD tools when compared to Selenium.
 Driver Dependencies	| Appropriate browser driver has to be installed so that the test script can talk to the corresponding web browser.	| No driver dependency.
