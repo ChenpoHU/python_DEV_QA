@@ -7,6 +7,17 @@ Custom test assertions for verifying the behavior of the Dash app, such as check
 While Pytest-Dash is specifically designed for testing Plotly Dash apps, it may be possible to adapt it to work with other types of dashboards as well. However, it may not provide the same level of convenience and ease-of-use as it does with Plotly Dash.
 """
 
+"""
+TODO: 
+replace sleep by below possible exceptions: 
+Below are my all-time favorite Selenium exceptions that I have found while wading through a CI build report:
+
+NoSuchElementException – move along, you’ll not find your input here
+ElementNotVisibleException – this cheeky scamp means you are tantalizingly close but not close enough, it is in the DOM, but you can’t do a single thing with it
+StaleElementReferenceException – the element has finished work for the day and gone to the pub. Please try again tomorrow
+TimeoutException – you could wait until the end of time and whatever you are trying to do is just not going to happen. You just rolled a seven
+"""
+
 import os
 import re
 from time import sleep
