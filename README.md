@@ -3,10 +3,7 @@ Project based python tutorial of development and QA of python based application.
 
 ## 1. General
 
-### 1.1 Tree
-![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/DirTree.png)
-
-### 1.2 The commit type can include the following
+### 1.1 The commit type can include the following
 Type  | Explanation
 ------------- | -------------
 feat | a new feature is introduced with the changes
@@ -102,6 +99,10 @@ Selenium is preferred over Cypress when one need:
 - When you need to run a test case on different browsers simultaneously then Selenium Grid works the best, since Cypress cannot be used to drive two browsers at the same time.
 - Cross browser testing at scale becomes easy with Selenium. Cypress does not support browsers like Safari, which restricts the cross browser testing support, when compared to Selenium.
 - Selenium supports NUnit and JUnit that are not supported by [3]
+
+## 3. Others
+### 3.1 Tree
+![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/DirTree.png)
 
 Sources: 
 - [1]https://martinfowler.com/bliki/TestPyramid.html, last accessed on 03.03.2023
