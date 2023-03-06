@@ -36,4 +36,21 @@ describe('Dashboard', () => {
     cy.get('[data-cy="dashboard-links"]').find('[data-test-id="link"]').eq(2).click();
     cy.url().should('include', '/link3');
   });
+  
+  it('should have an external link pointing to the right domain', () => {
+    // Ensure the external link is visible and has the correct attributes
+    cy.get('[data-cy="dashboard-external-link"]').should('be.visible')
+      .find('a')
+      .should('contain', 'webtips.dev')
+      .and('have.attr', 'href', 'https://webtips.dev/')
+      .and('have.attr', 'target', '_blank');
+  });
+
+  it('validates and formats first name', () => {
+    // Enter the first name and ensure it is validated and formatted correctly
+    cy.get('[data-cy="dashboard-first-name-input"]').type('johnny')
+      .should('have.attr', 'data-validation', 'required')
+      .and('have.class', 'active')
+      .and('have.value', 'Johnny');
+  });
 });
