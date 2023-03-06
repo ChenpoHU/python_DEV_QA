@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Cypress screenshots and videos
+QA/Cypress/screenshots/
+QA/Cypress/videos/
