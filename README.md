@@ -44,6 +44,16 @@ or use
 ``` 
 npx cypress run 
 ```
+#### 2.2.1 Selenium
+To install selenium, run:
+``` 
+pip install selenium
+```
+To run the code： 
+
+``` 
+python test.py
+```
 
 #### 2.2.2 Cypress Good Practices
 - https://www.webtips.dev/webtips/cypress/cypress-best-practices
