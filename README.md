@@ -41,7 +41,7 @@ or use
 ``` 
 npx cypress run 
 ```
-#### 2.2.1 Selenium
+#### 2.2.2 Selenium
 To install selenium, run:
 ``` 
 pip install selenium
