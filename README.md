@@ -46,6 +46,7 @@ npx cypress run
 ```
 
 #### 2.2.2 Cypress Best Practices
+- https://www.webtips.dev/webtips/cypress/cypress-best-practices
 - https://docs.cypress.io/guides/references/best-practices
 - https://www.lambdatest.com/blog/cypress-best-practices/
 
