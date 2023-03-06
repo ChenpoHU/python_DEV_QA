@@ -25,7 +25,21 @@ revert | reverts a previous commit
 ### 2.1 Testing Pyramid [1]
 ![alt text](https://github.com/ChenpoHU/python_DEV_QA/blob/main/Asset/img/testPyramid.png)
 
-### 2.2 Selenium vs. Cypress
+### 2.2 QA Tools Setup and Start
+#### 2.2.1 Cypress
+To install cypress, run:
+cd /{$yourPath}/PYTHON_DEV_QA/QA
+npm install cypress --save-dev
+
+To run cypress:
+use 
+npx cypress open 
+to run with builtin browser in cypress
+
+or use 
+npx cypress run
+
+### 2.3 Selenium vs. Cypress
 
 FEATURE | SELENIUM | CYPRESS
 ------------- | ------------- | -------------
