@@ -28,16 +28,20 @@ revert | reverts a previous commit
 ### 2.2 QA Tools Setup and Start
 #### 2.2.1 Cypress
 To install cypress, run:
-cd /{$yourPath}/PYTHON_DEV_QA/QA
-npm install cypress --save-dev
+``` cd /{$yourPath}/PYTHON_DEV_QA/QA
+npm install cypress --save-dev ```
 
 To run cypress:
 use 
-npx cypress open 
+``` npx cypress open ```
 to run with builtin browser in cypress
 
 or use 
-npx cypress run
+``` npx cypress run ```
+
+#### 2.2.2 Cypress Best Practices
+- https://docs.cypress.io/guides/references/best-practices
+- https://www.lambdatest.com/blog/cypress-best-practices/
 
 ### 2.3 Selenium vs. Cypress
 
