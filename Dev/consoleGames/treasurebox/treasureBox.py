@@ -176,7 +176,7 @@ print("I found one treasure box similar to this one:\n " + treasureBox)
 
 shipOrMonster = input("Your map shows that you need to get to Treasure Island, you can wait to board a boat or swim accross the sea, pick one.\nType Swim/Boat: ").lower()
 if shipOrMonster == "swim":
-    print(seeMonster + "\n Unfortunately, you were eaten by the hungry see monster, try again.")
+    print(seeMonster + "\n Unfortunately, you arm was eaten by the hungry see monster.")
 elif shipOrMonster == "boat":
     print("Nice, you made it to the next level, you're pretty good at this!")
     print ("Welcome to the boat:\n ")
@@ -237,7 +237,49 @@ elif feedOrNot == "no":
 
 openOrNot = input(treasureRoom + "\n You arrived the cave with the treasure box on the island! Please enter the password of four characters \n " + treasureLock).lower()
 if openOrNot == "open":
-    print("You WIN!")
+    print("You WIN! You have now the initial acess to the treasure box!")
+else:
+    print("Game Over.")
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+resetpwdOrNot = input("The treasure box is growing in this cave. You can only take away a gold coin everytime you enters. Do you want to reset the password?\n please enter Yes/No").lower()
+
+if resetpwdOrNot == "yes":
+    print("Great Choice! We have a password generator for you!")
+    nr_letters= (input("How many letters would you like in your password?\n"))
+    nr_symbols = (input(f"How many symbols would you like?\n"))
+    nr_numbers = (input(f"How many numbers would you like?\n"))
+
+    if not nr_letters.isdigit() or not nr_symbols.isdigit() or not nr_numbers.isdigit():
+        print("Invalid value, enter a number instead.")
+    else:
+        password = []
+
+        random_letter = random.randint(0, 51)
+        for i in range(0, int(nr_letters)):
+            random_letter = random.randint(0, 51)
+            password.append(letters[random_letter])
+
+        random_number = random.randint(0,9)
+        for i in range(0, int(nr_numbers)):
+            random_number = random.randint(0,9)
+            password.append(numbers[random_number])
+
+        random_symbol = random.randint(0,8)
+        for i in range(0, int(nr_symbols)):
+            random_symbol = random.randint(0,8)
+            password.append(symbols[random_symbol])
+
+        random.shuffle(password)
+        print(f"Here is your password: {''.join(password)}")
+
+        if len(password) <= 9:
+            print("Your password is weak, try to include at least 10 characters for a stronger password.")
+        else:
+            print("Your password is strong.")
 else:
     print("Game Over.")
 
