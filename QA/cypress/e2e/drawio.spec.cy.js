@@ -1,10 +1,17 @@
 describe('diagrams.net', () => {
-  beforeEach(() => {
-    cy.visit('https://app.diagrams.net');
-  });
 
   it('should load the app', () => {
+    cy.visit('https://app.diagrams.net');
+    cy.origin('https://draw.io', () => {
     cy.get('#app').should('be.visible');
+  })
+  });
+
+  it('should be able to be decided later', () => {
+    cy.origin('https://app.diagrams.net', () => {
+
+    cy.contains('Decide later').click();
+  })
   });
 
   it('should create a new diagram', () => {
