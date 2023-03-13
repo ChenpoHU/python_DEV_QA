@@ -1,3 +1,10 @@
+This is a console game of finding the treasure box. 
+
+The gamer needs to clear a few tasks such as 
+- congigure the treasure box, 
+- get a boat, 
+- feed the see monster 
+- and enter the password for the treasure box. 
 ``` 
 python treasureBox.py
 
