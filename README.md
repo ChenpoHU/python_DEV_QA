@@ -3,7 +3,16 @@ Project based python tutorial of development and QA of python based application.
 
 ## 1. Dev Projects
 ### 1.1 A console game called treasure box
+This is a console game of finding the treasure box. 
+
+The gamer needs to clear a few tasks such as 
+- congigure the treasure box, 
+- get a boat, 
+- feed the see monster 
+- play rock, paper, scissor with the see monster and win
+- and enter the password for the treasure box. 
 ### 1.2 Use Selenium to automate a download task
+
 
 ## 2. QA Projects
 ### 2.1 Testing Pyramid [1]

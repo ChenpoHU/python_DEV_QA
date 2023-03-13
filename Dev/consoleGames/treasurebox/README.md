@@ -4,6 +4,7 @@ The gamer needs to clear a few tasks such as
 - congigure the treasure box, 
 - get a boat, 
 - feed the see monster 
+- play rock, paper, scissor with the see monster and win
 - and enter the password for the treasure box. 
 ``` 
 python treasureBox.py
