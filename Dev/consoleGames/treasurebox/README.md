@@ -30,18 +30,18 @@ python treasureBox.py
                           $$$$       BOX
                           $$$$  PLEASE CONFIGURE YOUR TREASURE BOX FIRST!
 
-Enter the character you want to use for the top and bottom of the treasure box: #
-Enter the character you want to use for the sides of the treasure box: @
-Enter the character you want to use for the lock of the treasure box: ?
+Enter the character you want to use for the top and bottom of the treasure box: @
+Enter the character you want to use for the sides of the treasure box: #
+Enter the character you want to use for the lock of the treasure box: $
 This is the treasure box that you are looking for:
  
-#########
-@@       @@
-@@       @@
-@@   ?   @@
-@@       @@
-@@       @@
-#########
+@@@@@@@@@
+#@       @#
+#@       @#
+#@   $   @#
+#@       @#
+#@       @#
+@@@@@@@@@
 
 I found one treasure box similar to this one:
  
@@ -101,7 +101,30 @@ Welcome to the boat:
               ~ ~ ~ ~~~
 The see monster is following you. You have a fish, do you want to feed it with the fish? 
  Type Yes/No: yes
-Thank you for feeding me! I have a four luck chararcters for you: NOPE. You will be able to open the treasure box by rearranging these four characters.
+What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors
+0/1/2:0
+Thank you for feeding me! I have a four luck chararcters for you. You will be able to open the treasure box by rearranging these four characters. But you need to play the rock, paper and scissor with me and win first.
+You chose: Rock 
+
+     _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+
+
+The see Monster chose: Scissors 
+
+    _______
+---'   ____)____
+      __________)
+   _____________)
+  (_______)
+---.______)
+
+
+You win!The four lucky character is NOPE
 
   /¯¯¯¯¯¯¯¯¯¯¯¯
  |  ▓▓▓▓▓▓▓▓▓▓  |

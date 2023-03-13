@@ -1,3 +1,6 @@
+import random
+import time
+
 welcome = '''
                   _____$$$$___________$$$$
                __$$$$$$$$$_______$$$$$$$$$__
@@ -111,6 +114,39 @@ treasureLock = '''
 \_________________________________________/
   '''
 
+rock = '''
+
+     _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+
+'''
+
+paper = '''
+
+    _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+
+'''
+
+scissor = '''
+
+    _______
+---'   ____)____
+      __________)
+   _____________)
+  (_______)
+---.______)
+
+'''
+
 print(welcome)
 
 # Prompt the user to enter the characters to use for the top and bottom of the box
@@ -145,10 +181,56 @@ elif shipOrMonster == "boat":
     print("Nice, you made it to the next level, you're pretty good at this!")
     print ("Welcome to the boat:\n ")
     print (boat + "\n")
+    time.sleep(1)
 
 feedOrNot = input(seeMonster + "The see monster is following you. You have a fish, do you want to feed it with the fish? \n Type Yes/No: ").lower()
+
+choice = (input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n0/1/2:"))
+seeMonster_choice = random.randint(0,2)
+
 if feedOrNot == "yes":
-    print("Thank you for feeding me! I have a four luck chararcters for you: NOPE. You will be able to open the treasure box by rearranging these four characters.")
+    print("Thank you for feeding me! I have a four luck chararcters for you. You will be able to open the treasure box by rearranging these four characters. But you need to play the rock, paper and scissor with me and win first.")
+    if not choice.isdigit():
+        print("You've entered an invalid value, try again and choose a number between 0-2.")
+    else:
+        choice = int(choice)
+    if choice > 2:
+        print("You've entered an invalid number, try again and choose a number between 0-2.")
+    elif choice == 0 or choice == 1 or choice == 2:
+        if choice == 0:
+            print(f"You chose: Rock {rock}")
+        elif choice == 1:
+            print(f"You chose: Paper {paper}")
+        elif choice == 2:
+            print(f"You chose: Scissor {scissor}")
+
+        if seeMonster_choice == 0:
+            print(f"The see Monster chose: Rock {rock}")
+            if choice == 2:
+                print("You lose, Rock wins against scissor.")
+            elif choice == 0:
+                print("It's a draw!")
+            else:
+                print("You win! The four lucky character is NOPE")
+
+        elif seeMonster_choice == 1:
+            print(f"The see Monster chose: Paper {paper}")
+            if choice == 0:
+                print("You lose, Paper wins against rock.")
+            elif choice == 0:
+                print("It's a draw!")
+            else:
+                print("You win!The four lucky character is NOPE")
+
+        elif seeMonster_choice == 2:
+            print(f"The see Monster chose: Scissors {scissor}")
+            if choice == 1:
+                print("You lose, Scissor win against paper.")
+            elif choice == 2:
+                print("It's a draw!")
+            else:
+                print("You win!The four lucky character is NOPE")
+
 elif feedOrNot == "no":
     print("You can eat the fish yourself, so than you will not endure the hunger.")
 
