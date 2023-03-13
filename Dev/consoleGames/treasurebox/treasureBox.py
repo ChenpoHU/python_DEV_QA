@@ -147,6 +147,20 @@ scissor = '''
 
 '''
 
+level1 = '''
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+*      *****  *       *  *****  *          *
+*      *       *     *   *      *        * * 
+*      *****    *   *    *****  *          *
+*      *         * *     *      *          *
+*****  *****      *      *****  *****    *****
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+'''
+
 print(welcome)
 
 # Prompt the user to enter the characters to use for the top and bottom of the box
@@ -237,7 +251,7 @@ elif feedOrNot == "no":
 
 openOrNot = input(treasureRoom + "\n You arrived the cave with the treasure box on the island! Please enter the password of four characters \n " + treasureLock).lower()
 if openOrNot == "open":
-    print("You WIN! You have now the initial acess to the treasure box!")
+    print("You WIN! You have now the initial acess to the treasure box!\n " + level1)
 else:
     print("Game Over.")
 

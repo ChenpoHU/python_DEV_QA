@@ -161,5 +161,29 @@ You win!The four lucky character is NOPE
 |  :  |  ;  |  "  |  '  |  <  |  >  |  ?  |
 \_________________________________________/
   open
-You WIN!
+You WIN! You have now the initial acess to the treasure box!
+ 
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+*      *****  *       *  *****  *          *
+*      *       *     *   *      *        * * 
+*      *****    *   *    *****  *          *
+*      *         * *     *      *          *
+*****  *****      *      *****  *****    *****
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+
+The treasure box is growing in this cave. You can only take away a gold coin everytime you enters. Do you want to reset the password?
+ please enter Yes/Noyes
+Great Choice! We have a password generator for you!
+How many letters would you like in your password?
+9
+How many symbols would you like?
+3
+How many numbers would you like?
+2
+Here is your password: 4ZodDIVo(7*$ed
+Your password is strong.
 ``` 
